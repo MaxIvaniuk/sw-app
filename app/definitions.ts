@@ -13,19 +13,6 @@ export type HeroNode = {
     birth_year: string,
 }
 
-export type MovieNodeData = {
-    title: string,
-    producer: string,
-    episode_id: string,
-    opening_crawl: string
-}
-
-export type StarshipNodeData = {
-    name: string,
-    model: string,
-    starship_class: string,
-}
-
 export type FlowNodes = {
     id: string;
     type: string;
