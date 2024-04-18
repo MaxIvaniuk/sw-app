@@ -7,7 +7,7 @@ const MovieCustomNode = ({ data }: { data: { id: number } }) => {
     const { id } = data;
     const results = useQuery({
         queryKey: ['movieNode'],
-        queryFn: () => getFilmById(id).then(res => res.data)
+        queryFn: () => getFilmById(id)
     })
     const { error, isFetching } = results
 

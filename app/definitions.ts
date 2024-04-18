@@ -31,7 +31,7 @@ export type FlowNodes = {
     id: string;
     type: string;
     data: {
-        id: never;
+        id: string|number;
     };
     position: {
         x: number;

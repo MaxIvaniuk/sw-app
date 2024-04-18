@@ -1,5 +1,5 @@
 import { getStarshipById } from '@/app/lib/api';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Handle, Position } from 'react-flow-renderer';
 import { useQuery } from 'react-query';
  
@@ -7,7 +7,7 @@ const StarshipCustomNode = ({ data }: { data: { id: number } }) => {
     const { id } = data;
     const results = useQuery({
         queryKey: ['starshipNode'],
-        queryFn: () => getStarshipById(id).then(res => res.data)
+        queryFn: () => getStarshipById(id)
     })
     const { error, isFetching } = results
 
