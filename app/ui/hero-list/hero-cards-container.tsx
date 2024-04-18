@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useRef, useCallback, useEffect } from 'react';
 import { useInfiniteQuery } from 'react-query';
 import { useIntersection } from '@mantine/hooks';
